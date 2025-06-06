@@ -1,0 +1,107 @@
+---
+title: "Ingeniería en Materiales"
+author: "Las Ali"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+
+La ingeniería de los materiales es la especialidad que se encarga de estudiar y procesar los materiales como plásticos, cerámicos, metales y compuestos para elaborar prácticamente cualquier producto que utiliza el ser humano, desde una botella hasta un microchip o una fibra óptica.
+
+En la actualidad, el conocimiento en materiales se ubica dentro de los primeros lugares en investigación a nivel mundial, ya que día a día se busca desarrollar nuevos materiales o aplicaciones de estos.
+
+El estudio de los materiales se basa en la relación estructura-propiedades-usos del material a analizar. Por otro lado, la ingeniería y ciencia de los materiales contempla el estudio de estos en condiciones tanto normales como extremas, por lo que se debe trabajar con herramientas tecnológicas como análisis de laboratorio, sistemas de simulación computarizada, pruebas para control y evaluación.
+
+```{r graph, out.width="100%", echo=FALSE}
+library(visNetwork)
+library(scales)
+library(RColorBrewer)
+
+# dataset
+nodos <- read.csv("Nodos_Cursos.csv", stringsAsFactors = FALSE)
+aristas <- read.csv("Aristas_Cursos.csv", stringsAsFactors = FALSE)
+
+
+# distintas formas segun el area
+formas <- c("dot", "square", "triangle", "box", "ellipse", "star", "diamond", "triangleDown")
+areas_unicas <- sort(unique(nodos$Area))
+nodos$shape <- formas[match(nodos$Area, areas_unicas)]
+
+# colores segun bloque
+bloques_unicos <- sort(unique(nodos$Bloque))
+max_colores <- brewer.pal.info["PRGn", "maxcolors"]
+bloque_colors <- setNames(brewer.pal(length(bloques_unicos), "PRGn"), bloques_unicos)
+nodos$color.background <- bloque_colors[as.character(nodos$Bloque)]
+
+# tamaño segun creditos
+nodos$value <- nodos$Creditos * 5
+
+# borde segun horas
+nodos$borderWidth <- rescale(nodos$Horas, to = c(1, 10))
+nodos$color.border <- col_numeric("Oranges", domain = range(nodos$Horas))(nodos$Horas)
+
+# nodos
+nodes <- data.frame(
+  id = nodos$Sigla,
+  label = nodos$Nombre,
+  title = paste("Sigla:", nodos$Sigla, "<br>Créditos:", nodos$Creditos,
+                "<br>Horas:", nodos$Horas, "<br>Área:", nodos$Area,
+                "<br>Bloque:", nodos$Bloque),
+  shape = nodos$shape,
+  value = nodos$value,
+  color.background = nodos$color.background,
+  color.border = nodos$color.border,
+  borderWidth = nodos$borderWidth,
+  font = list(size = 18),
+  level = nodos$Bloque,
+  group = nodos$Area,
+  stringsAsFactors = FALSE
+)
+
+# aristas
+edges <- data.frame(
+  from = aristas$Fuente,
+  to = aristas$Destino,
+  arrows = ifelse(aristas$Tipo == "dirigida", "to", ""),
+  dashes = ifelse(aristas$Tipo == "bidireccional", TRUE, FALSE),
+  color = ifelse(aristas$Tipo == "bidireccional", "skyblue", "black"),
+  smooth = FALSE
+)
+
+legend_nodes <- data.frame(
+  label = areas_unicas,
+  shape = formas[1:length(areas_unicas)],
+  color = "orchid", 
+  font = list(size = 16)
+)
+
+# grafo
+visNetwork(nodes, edges, width = "100%", height = "1200px") %>%
+  visOptions(
+    highlightNearest = list(enabled = TRUE, hover = TRUE),
+    nodesIdSelection = TRUE,
+    selectedBy = "group"
+  ) %>%
+  visLegend(
+    addNodes = legend_nodes,
+    useGroups = FALSE,
+    position = "left",
+    width = 0.15
+  ) %>%
+  visInteraction(navigationButtons = TRUE) %>%
+  visHierarchicalLayout(
+    direction = "UD",
+    sortMethod = "directed",
+    levelSeparation = 500,
+    nodeSpacing = 250
+  ) %>%
+  visPhysics(enabled = FALSE)
+
+```
