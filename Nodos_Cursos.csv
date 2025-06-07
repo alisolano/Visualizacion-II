@@ -1,68 +1,68 @@
 Sigla,Nombre,Bloque,Creditos,Horas,Area
-CI0200,Examen Diagnostico,0,0,0,ID
-CI0202,Ingles Basico,0,2,3,ID
-CI1106,Comunicacion Escrita,1,2,6,LG
-CM1103,Introduccion a la Ciencia e Ingenieria de los materiales,1,3,8,MT
-CS1502,Introduccion a la Tecnica Ciencia y Tecnologia,1,1,2,GN
-MA0101,Matematica General,1,2,5,MA
-MI2101,Dibujo Tecnico,1,3,9,MC
-QU1102,Laboratorio de Quimica Basica I,1,1,2,QM
-QU1106,Quimica Basica I,1,3,4,QM
-SE1100,Actividad Cultural I,1,0,2,GN
-CA2125,Elementos de Computacion,2,3,4,CP
-CI1107,Comunicacion Oral,2,1,3,LG
-CI1230,Ingles I,2,2,6,ID
-FI1101,Fisica General I,2,3,4,FS
-FI1201,Laboratorio de Fisica General I,2,1,2,FS
-MA1102,Calculo Diferencial e Integral,2,4,5,MA
-QU1104,Laboratorio de Quimica Basica II,2,1,2,QM
-QU1107,Quimica Basica II,2,3,4,QM
-CI1231,Ingles II,3,2,3,ID
-CM2103,Termodinamica,3,3,4,FS
-FI1102,Fisica General II,3,3,4,FS
-FI1202,Laboratorio de Fisica General II,3,1,2,FS
-MA1103,Calculo y algebra Lineal,3,4,4,MA
-QU2403,Quimica Organica,3,3,4,QM
-QU2404,Laboratorio de Quimica Organica,3,2,4,QM
-SE1200,Actividad Deportiva I,3,0,2,GN
-CM2401,Metalurgia Fisica,4,3,9,FS
-CM2402,Laboratorio de Metalurgia Fisica,4,1,3,FS
-CM3103,Termodinamica de Materiales,4,3,4,FS
-MA2105,Ecuaciones Diferenciales,4,4,4,MA
-MI2106,Estatica,4,3,4,FS
-MI3124,Dibujo Industrial,4,4,4,MC
-SE1400,Actividad Cultural - Deportiva,4,0,2,GN
-CM3207,Metodos Numericos para Ingenieria,5,3,4,MA
-CM3501,Materiales Polimericos,5,3,9,QM
-CS2303,Relaciones Laborales,5,2,6,GN
-FH1000,Centros de Formacion Humanistica,5,0,2,SC
-MI3115,Resistencia de Materiales,5,3,4,MT
-MI4510,Electrotecnia,5,3,4,FS
-PI2609,Probabilidad y Estadistica,5,2,3,MA
-SO2601,Fundamentos de Seguridad e Higiene Ocupacional,5,1,2,SA
-CM3208,Metrologia para Ingenieria,6,3,4,MC
-CM3601,Mecanica de Fluidos,6,3,9,MC
-CM3602,Tecnologia de Aleaciones Metalicas,6,3,9,MT
-CM3603,Mecanica de Materiales Avanzada,6,3,9,MT
-CM4202,Laboratorio Tecnologias Aleaciones Metalicas,6,2,3,MT
-CM4305,Tecnologia de Polimeros,6,2,3,QM
-CS3404,Seminario de etica para la Ingenieria,6,2,5,SC
-AE5121,Ingenieria Economica,7,3,3,MA
-CM3205,Tecnologia de Maquinado,7,3,4,MC
-CM4307,Conformado de Materiales,7,4,4,MT
-CM4701,Transferencia de Calor y Masa,7,3,9,QM
-CM4702,Materiales Ceramicos y Compuestos,7,3,9,QM
-CS4402,Seminario de Estudios Costarricenses,7,2,3,SC
-CM4101,Modelacion y Simulacion,8,4,4,MC
-CM4801,Caracterizacion de Materiales,8,4,4,MT
-CM4802,Gestion de Proyectos,8,3,9,GN
-CM4803,Taller de Diseno en Ciencia e Ingenieria de los Materiales,8,7,21,MT
-CM4309,Corrosion y Proteccion de Materiales,9,4,12,MT
-CM5104,Diseno de Moldes y Troqueles,9,4,4,MC
-CM5200,Electiva I,9,4,12,GN
-CM5302,Equipos Auxiliares de Planta,9,3,4,SA
-CM5901,Ensayos No Destructivos,9,3,9,GN
-CM5220,Electiva II,10,4,12,GN
-CM5240,Electiva III,10,4,12,GN
-CM5300,Proyecto Final de Graduacion,10,10,12,GN
-PI5101,Gestion de Procesos,10,4,8,GN
+CI0200,Examen Diagnostico,0,0,0,Lenguaje
+CI0202,Ingles Basico,0,2,3,Lenguaje
+CI1106,Comunicacion Escrita,1,2,6,Lenguaje
+CM1103,Introduccion a la Ciencia e Ingenieria de los materiales,1,3,8,Materiales
+CS1502,Introduccion a la Tecnica Ciencia y Tecnologia,1,1,2,Generales
+MA0101,Matematica General,1,2,5,Matematicas
+MI2101,Dibujo Tecnico,1,3,9,Mecanica
+QU1102,Laboratorio de Quimica Basica I,1,1,2,Quimica
+QU1106,Quimica Basica I,1,3,4,Quimica
+SE1100,Actividad Cultural I,1,0,2,Generales
+CA2125,Elementos de Computacion,2,3,4,Generales
+CI1107,Comunicacion Oral,2,1,3,Lenguaje
+CI1230,Ingles I,2,2,6,Lenguaje
+FI1101,Fisica General I,2,3,4,Fisica
+FI1201,Laboratorio de Fisica General I,2,1,2,Fisica
+MA1102,Calculo Diferencial e Integral,2,4,5,Matematicas
+QU1104,Laboratorio de Quimica Basica II,2,1,2,Quimica
+QU1107,Quimica Basica II,2,3,4,Quimica
+CI1231,Ingles II,3,2,3,Lenguaje
+CM2103,Termodinamica,3,3,4,Fisica
+FI1102,Fisica General II,3,3,4,Fisica
+FI1202,Laboratorio de Fisica General II,3,1,2,Fisica
+MA1103,Calculo y algebra Lineal,3,4,4,Matematicas
+QU2403,Quimica Organica,3,3,4,Quimica
+QU2404,Laboratorio de Quimica Organica,3,2,4,Quimica
+SE1200,Actividad Deportiva I,3,0,2,Generales
+CM2401,Metalurgia Fisica,4,3,9,Fisica
+CM2402,Laboratorio de Metalurgia Fisica,4,1,3,Fisica
+CM3103,Termodinamica de Materiales,4,3,4,Fisica
+MA2105,Ecuaciones Diferenciales,4,4,4,Matematicas
+MI2106,Estatica,4,3,4,Fisica
+MI3124,Dibujo Industrial,4,4,4,Mecanica
+SE1400,Actividad Cultural - Deportiva,4,0,2,Generales
+CM3207,Metodos Numericos para Ingenieria,5,3,4,Matematicas
+CM3501,Materiales Polimericos,5,3,9,Quimica
+CS2303,Relaciones Laborales,5,2,6,Generales
+FH1000,Centros de Formacion Humanistica,5,0,2,Generales
+MI3115,Resistencia de Materiales,5,3,4,Metalurgia
+MI4510,Electrotecnia,5,3,4,Mecanica
+PI2609,Probabilidad y Estadistica,5,2,3,Matematicas
+SO2601,Fundamentos de Seguridad e Higiene Ocupacional,5,1,2,Generales
+CM3208,Metrologia para Ingenieria,6,3,4,Mecanica
+CM3601,Mecanica de Fluidos,6,3,9,Mecanica
+CM3602,Tecnologia de Aleaciones Metalicas,6,3,9,Metalurgia
+CM3603,Mecanica de Materiales Avanzada,6,3,9,Metalurgia
+CM4202,Laboratorio Tecnologias Aleaciones Metalicas,6,2,3,Metalurgia
+CM4305,Tecnologia de Polimeros,6,2,3,Quimica
+CS3404,Seminario de etica para la Ingenieria,6,2,5,Generales
+AE5121,Ingenieria Economica,7,3,3,Matematicas
+CM3205,Tecnologia de Maquinado,7,3,4,Mecanica
+CM4307,Conformado de Materiales,7,4,4,Metalurgia
+CM4701,Transferencia de Calor y Masa,7,3,9,Quimica
+CM4702,Materiales Ceramicos y Compuestos,7,3,9,Quimica
+CS4402,Seminario de Estudios Costarricenses,7,2,3,Generales
+CM4101,Modelacion y Simulacion,8,4,4,Mecanica
+CM4801,Caracterizacion de Materiales,8,4,4,Metalurgia
+CM4802,Gestion de Proyectos,8,3,9,Materiales
+CM4803,Taller de Diseno en Ciencia e Ingenieria de los Materiales,8,7,21,Metalurgia
+CM4309,Corrosion y Proteccion de Materiales,9,4,12,Metalurgia
+CM5104,Diseno de Moldes y Troqueles,9,4,4,Mecanica
+CM5200,Electiva I,9,4,12,Materiales
+CM5302,Equipos Auxiliares de Planta,9,3,4,Materiales
+CM5901,Ensayos No Destructivos,9,3,9,Materiales
+CM5220,Electiva II,10,4,12,Materiales
+CM5240,Electiva III,10,4,12,Materiales
+CM5300,Proyecto Final de Graduacion,10,10,12,Materiales
+PI5101,Gestion de Procesos,10,4,8,Materiales
